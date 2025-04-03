@@ -1,0 +1,12 @@
+.customColor{
+  background-color: aqua;
+}
+.products-content {
+  display: grid
+;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-top: 50px;
+}
+img.card-img-top {
+  padding: 36px;
+}

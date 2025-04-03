@@ -1,0 +1,16 @@
+.modal-dialog .modal-content .modal-header {
+  position: initial;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.modal-dialog .modal-content .modal-body {
+  height: 100px;
+  padding: 10px 20px;
+}
+
+.modal-dialog .modal-content {
+  width: 50%;
+  border-radius: 0;
+  margin: auto;
+}

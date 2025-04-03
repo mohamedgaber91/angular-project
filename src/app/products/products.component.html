@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+   <testing-component [isTesting]='false' ></testing-component>
+  <app-button>
+    <p class="btn-app">
+      send from products
+    </p>
+  </app-button>
+  <app-button (click)="setActive('products')">
+    <p class="btn-app">
+      all products
+    </p>
+  </app-button>
+  <app-button (click)="setActive('closes')">
+    <p class="btn-app">
+      closes
+    </p>
+  </app-button>
+  <div *ngIf="products==true">
+    all products list
+  </div>
+  <div *ngIf="closes==true">
+    all closes list
+  </div>
+  <div [ngSwitch]="products" [ngClass]="color">
+    <div *ngSwitchCase="true" [ngStyle]="{'color':'red'}">products is shown</div>
+    <div *ngSwitchCase="false">closes is shown</div>
+  </div>
+  <div class="container">
+    <div class="products-content">
+      <div *ngFor="let product of allProducts">
+        <div class="card" style="width: 18rem;">
+          <img [src]="product.image" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{product.title}}</h5>
+            <p class="card-text">{{product.description}}</p>
+            <a routerLink='/products/{{product.id}}' class="btn btn-primary">details</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+  <button (click)="addProduct(product)">add product</button>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<header>
+  <div class="top-bar-container">
+      <div class="special-container">
+          <div class="top-bar">
+
+              <div class="left-icons">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fas fa-mobile-alt"></i></a>
+              </div>
+              <div class="delevery">
+                <div class="swiper-container delevery-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="delivery-info">
+                                Free Delivery on orders over 99 QAR!
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="delivery-info">
+                                Special offer: Buy 2 get 1 free!
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-prev delevery-swiper-prev"></div> <!-- سهم لليسار -->
+                    <div class="swiper-button-next delevery-swiper-next"></div> <!-- سهم لليمين -->
+                </div>
+            </div>
+
+
+              <!-- <div class="language">
+                  <select>
+                      <option value="en">English</option>
+                      <option value="ar">العربية</option>
+                  </select>
+              </div> -->
+
+
+          </div>
+      </div>
+
+  </div>
+  <div class="nav-container">
+      <div class="special-container">
+          <div class="navbar">
+              <div class="logo">
+                  <a routerLink=""> <img src="assets/imges/logo.png" alt="Logo"></a>
+              </div>
+              <div class="search-bar">
+                  <input class="nav-input-search" type="text" placeholder="  Search for...">
+
+              </div>
+              <div class="nav-links">
+                  <a routerLink="/login"><i class="fa-regular fa-user"></i> login</a>
+                  <a routerLink="/register"><i class="fa-solid fa-right-to-bracket"></i> register</a>
+                  <a routerLink="/cart"><i class="fa-solid fa-cart-shopping"></i> Cart (0)</a>
+              </div>
+          </div>
+      </div>
+
+  </div>
+  <div class="header-container">
+
+      <div class="special-container">
+
+          <!-- Navigation Bar -->
+          <nav>
+              <ul class="section-links">
+                  <!-- Shop by Category with Dropdown -->
+                  <li class="dropdown">
+                      <a href="/home#category"><i class="fa-solid fa-list"></i> Shop by Category <i
+                              class="fa-solid fa-chevron-down"></i></a>
+                      <ul class="dropdown-menu">
+                          <li class="dropdown-item">
+                              <a href="#">Category 1 <i class="fa-solid fa-chevron-right"></i></a>
+                              <ul class="submenu">
+                                  <li><a href="#">Subcategory 1.1</a></li>
+                                  <li><a href="#">Subcategory 1.2</a></li>
+                              </ul>
+                          </li>
+                          <li class="dropdown-item">
+                              <a href="#">Category 2 <i class="fa-solid fa-chevron-right"></i></a>
+                              <ul class="submenu">
+                                  <li><a href="#">Subcategory 2.1</a></li>
+                                  <li><a href="#">Subcategory 2.2</a></li>
+                              </ul>
+                          </li>
+                          <li class="dropdown-item">
+                              <a href="#">Category 3 <i class="fa-solid fa-chevron-right"></i></a>
+                              <ul class="submenu">
+                                  <li><a href="#">Subcategory 3.1</a></li>
+                                  <li><a href="#">Subcategory 3.2</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+                  <!-- Other menu items -->
+                  <li><a href="/home#brands"><i class="fa-solid fa-award"></i> Brands</a></li>
+                  <li><a href="/home#category"><i class="fa-solid fa-tag"></i> Special Offers</a>
+                  </li>
+                  <li><a routerLink="/about"><i class="fas fa-info-circle"></i> About</a></li>
+                  <li><a href="/contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+  <button class="menu-toggle" (click)="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+      <button class="close-btn" (click)="toggleMenu()">
+          <i class="fa-solid fa-xmark"></i>
+      </button>
+      <nav>
+          <ul>
+              <li> <a routerLink="/login"><i class="fa-regular fa-user"></i> login</a></li>
+              <li> <a routerLink="/register"><i class="fa-solid fa-right-to-bracket"></i> register</a>
+              </li>
+              <li> <a routerLink="/cart"><i class="fa-solid fa-cart-shopping"></i> Cart (0)</a></li>
+              <li class="dropdown">
+                  <a href="/home#category"><i class="fa-solid fa-list"></i> Shop by Category</a>
+              </li>
+              <li><a href="/home#brands"><i class="fa-solid fa-award"></i> Brands</a></li>
+              <li><a href="/home#category"><i class="fa-solid fa-tag"></i> Special Offers</a></li>
+              <li><a href="/about"><i class="fas fa-info-circle"></i> About</a></li>
+              <li><a href="/contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+
+
+
+          </ul>
+      </nav>
+  </div>
+
+</header>
