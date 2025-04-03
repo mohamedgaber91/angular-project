@@ -1,0 +1,23 @@
+
+  <a routerLink="routerLink">
+    <div class="product-card">
+      <!-- Product Header -->
+      <div class="product-head">
+        <i class="fa-regular fa-heart"></i>
+        <p>{{ discount }}</p>
+      </div>
+
+      <!-- Product Image -->
+      <img class="slide-img" [src]="imageUrl" alt="Product Image">
+
+      <!-- Product Description -->
+      <p class="product-details">{{ description }}</p>
+
+      <!-- Product Footer with Price and Add Button -->
+      <div class="product-footer">
+        <p class="product-price">{{ price }}</p>
+        <i class="fa-solid fa-plus"></i>
+      </div>
+    </div>
+  </a>
+

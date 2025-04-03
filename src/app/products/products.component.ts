@@ -2,18 +2,14 @@ import { Component,OnInit } from '@angular/core';
 import { DBServices } from '../db.services';
 import { CommonModule } from '@angular/common';
 // import { Home } from '../home/Home.component';
-import { ButtonComponent } from "../button/button.component";
+import { ButtonComponent } from "../sub-products/button/button.component";
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { RouterModule } from '@angular/router';
-import { TestingComponent } from '../testing/testing.component';
-// import { TestingComponent } from './../../testing/testing.component';
-
-
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [CommonModule,TestingComponent, ButtonComponent,RouterModule],
+  imports: [CommonModule, ButtonComponent,RouterModule],
 templateUrl: './products.component.html',
   styleUrl: './products.component.css'
 })
@@ -78,16 +74,3 @@ export class ProductsComponent implements OnInit {
   }
 
 }
-
-// @Component({
-//   selector:'products',
-//   templateUrl:'./products.component.html',
-//   styleUrls:['./products.component.css'],
-//   standalone:true
-// })
-// export  class productsComponent {
-
-//   constructor() {
-
-//   }
-// }

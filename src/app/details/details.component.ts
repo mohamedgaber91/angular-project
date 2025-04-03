@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { initializeSwipers } from '../../assets/swiper-config';
+import { LikedSliderComponent } from '../sliders/liked-slider/liked-slider.component';
 
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [],
+  imports: [LikedSliderComponent],
   templateUrl: './details.component.html',
   styleUrl: './details.component.css'
 })
