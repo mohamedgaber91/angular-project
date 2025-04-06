@@ -372,7 +372,6 @@ img.pay-img {
     color: var(--second-color);;
 
 }
-/* لضبط الشكل الأساسي لقائمة القسم */
 .section-links {
     list-style: none;
     display: flex;
@@ -411,7 +410,6 @@ height: 200px;
 
 
 
-/* إخفاء القائمة الفرعية بشكل افتراضي */
 .dropdown-menu, .submenu {
     display: none;
     position: absolute;
@@ -713,7 +711,7 @@ cursor: pointer;
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 917px) {
     .top-bar {
         flex-direction: column;
         text-align: center;
@@ -833,7 +831,7 @@ cursor: pointer;
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 917px) {
     .swiper-slide img {
         width: 90%;
     }
@@ -865,7 +863,7 @@ height: 200px;
   }
 }
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 917px) {
     /* .offers .col {
         flex: 1 1 45%;
     } */
@@ -1139,7 +1137,7 @@ margin-right: 7px;
     z-index: 1100;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 917px) {
     .menu-toggle {
         display: block;
     }

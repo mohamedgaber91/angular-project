@@ -22,7 +22,7 @@ import { BtnScrollComponent } from '../base-components/btn-scroll/btn-scroll.com
 
   imports: [CommonModule,RouterModule,LargSliderComponent,BestSellerSliderComponent,FeatureComponentComponent,BrandSliderComponent,OffersComponentComponent,BtnScrollComponent],
 templateUrl: './HomePage.component.html',
-  styleUrls: ['../../styles.css','../../assets/css/main.css','../../assets/css/normalize.css','../../assets/css/responsive.css']
+  styleUrls: ['../../assets/css/normalize.css','../../assets/css/responsive.css','../../assets/css/main.css','../../styles.css']
 })
 export class HomePage implements OnInit {
 
