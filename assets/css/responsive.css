@@ -34,7 +34,7 @@
 
 
 /* Tablet device :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1150px) {
     /* Global */
     body {
         font-size: 14px;
@@ -60,8 +60,12 @@
     p {
         font-size: 14px;
     }
-
-
+    .delevery {
+      width: 70% !important;
+  }
+  .section-links{
+    gap: 5px !important;
+  }
 }
 
 
