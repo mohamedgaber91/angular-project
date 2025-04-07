@@ -1,0 +1,19 @@
+<div class="sections-container" id="category">
+  <div class="special-container">
+    <!-- Special category Section -->
+    <section id="category">
+      <div class="section-heading">
+        <h2>Shop by Category</h2>
+        <a routerLink="">view all</a>
+      </div>
+      <div class="category">
+        <div class="row">
+          <div class="col" *ngFor="let category of categories">
+            <img [src]="category.image" alt="Offer 1">
+            <p>{{category.title | translate}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

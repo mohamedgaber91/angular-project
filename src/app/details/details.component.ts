@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { initializeSwipers } from '../../assets/swiper-config';
+// import { initializeSwipers } from '../../assets/swiper-config';
 import { LikedSliderComponent } from '../sliders/liked-slider/liked-slider.component';
 
 @Component({
@@ -11,6 +11,6 @@ import { LikedSliderComponent } from '../sliders/liked-slider/liked-slider.compo
 })
 export class DetailsComponent implements OnInit {
   ngOnInit(): void {
-    initializeSwipers();  // تهيئة السلايدر بعد تحميل الصفحة
+    // initializeSwipers();
   }
 }

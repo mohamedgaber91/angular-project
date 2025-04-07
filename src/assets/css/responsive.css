@@ -98,3 +98,145 @@
     }
 
 }
+
+@media (min-width: 768px){
+  .special-container{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .special-container-categories{
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+  .nav-links a{
+    padding: 7px;
+  }
+  }
+
+
+
+
+  /* Further adjustments for very small screens */
+  @media (max-width: 480px) {
+    .left-icons a {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .delivery-info {
+        font-size: 12px;
+    }
+
+    .search-bar input, .search-bar button {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+        display: inline;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        width: 83px;
+    }
+    .top-bar .info {
+        width: 140%;
+    }
+  }
+
+@media (max-width: 480px) {
+  .top-bar {
+    flex-direction: column;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+ .larg .larg-container .swiper-wrapper div .swiper-slide img {
+height: 200px;
+}
+}
+/* Responsive Adjustments */
+
+
+@media (max-width: 576px) {
+  .category .col {
+      flex: 1 1 100%;
+  }
+
+  .brands-swiper img {
+padding-bottom: 10px;    }
+}
+@media (min-width: 1200px) {
+  .product-card {
+    font-size: 1.2rem;
+  }
+  .slide-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .product-card {
+    font-size: 1rem;
+  }
+  .slide-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-card {
+    font-size: 0.9rem;
+  }
+  .slide-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-slide {
+    padding: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .features-section {
+      display: block;
+  }
+  .footer-section {
+      font-size: 15px;
+      color: #ffffff91;
+  }
+  .feature {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .social-icons {
+      /* font-size: 12px; */
+      margin-bottom: 20px;
+  }
+  .footer-section h5 {
+      font-weight: bold;
+      margin-top: 20px;
+  }
+  .footer-section a {
+      color: #ffffffc2;
+      text-decoration: none;
+  }
+  .footer-section .social-icons a {
+      font-size: 24px;
+      margin-right: 10px;
+      color: #ffffff91;
+  }
+  .feature h3 {
+    font-size: 1.3rem;
+  }
+
+  .feature p {
+    font-size: 0.9rem;
+  }
+}
+

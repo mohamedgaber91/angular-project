@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
   selector: 'productCard-component',
   standalone:true,
   templateUrl: './product-card.component.html',
-  styleUrls: ['../../../styles.css','../../../assets/css/main.css','../../../assets/css/normalize.css','../../../assets/css/responsive.css'],
+  styleUrls: ['../../../assets/css/global-styles/style.css','../../../assets/css/main.css','../../../assets/css/normalize.css','../../../assets/css/responsive.css','../../../assets/css/global-styles/Swiper.css'],
   imports:[RouterModule]
 })
 export class ProductCardComponent {

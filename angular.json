@@ -29,12 +29,16 @@
               "src/assets/css/plugins.css",
               "src/assets/css/normalize.css",
               "src/assets/css/responsive.css",
-
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/swiper/swiper-bundle.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "src/styles.css",
-
+              "src/assets/css/global-styles/Buttons.css",
+              "src/assets/css/global-styles/Navbar.css",
+              "src/assets/css/global-styles/Swiper.css",
+              "src/assets/css/global-styles/Tables.css",
+              "src/assets/css/global-styles/Utilities.css",
+              "src/assets/css/global-styles/colors.css",
+              "src/assets/css/global-styles/style.css",
               "src/assets/css/main.css"
 
 

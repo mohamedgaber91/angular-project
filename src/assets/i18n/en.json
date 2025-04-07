@@ -1,0 +1,23 @@
+{
+  "HELLO": "Hello",
+  "WELCOME": "Welcome to our website!",
+  "NEXT": "Next",
+  "PREV": "Previous",
+  "BEST_SELLERS": "Best Sellers",
+  "VIEW_ALL": "View all",
+  "SAVE_PERCENT": "Save {{percent}}%",
+  "PRODUCT_DESC_1": "Premium quality product with advanced features",
+  "PRODUCT_1": "Product 1",
+  "PRODUCT_DESC_2": "Innovative design with superior performance",
+  "PRODUCT_2": "Product 2",
+  "Account":"Account",
+  "DELIVERY_BANER_1":"Special offer: Buy 1 get 1 free!",
+  "DELIVERY_BANER_2":"Special offer: Buy 2 get 2 free!",
+  "LOGIN":"login",
+  "REGISTER":"register",
+  "CART":"cart",
+  "CATEGORY_TITLE":"Skin Care & Derma",
+  "HOME":"Home",
+  "LIKED":"You may also like"
+
+}

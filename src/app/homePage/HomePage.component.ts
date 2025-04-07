@@ -1,32 +1,29 @@
 
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { DBServices } from '../db.services';
 import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { initializeSwipers } from '../../assets/swiper-config';
 import { RouterModule } from '@angular/router';
 import { LargSliderComponent } from '../sliders/larg-slider/larg-slider.component';
-import { BestSellerSliderComponent } from '../sliders/best-seller-slider/best-seller-slider.component';
 import { FeatureComponentComponent } from '../base-components/feature-component/feature-component.component';
 import { BrandSliderComponent } from '../sliders/brand-slider/brand-slider.component';
-import { OffersComponentComponent } from '../base-components/offers-component/offers-component.component';
+import { CategoryComponentComponent } from '../base-components/category-component/category-component.component';
 import { ButtonComponent } from '../sub-products/button/button.component';
 import { BtnScrollComponent } from '../base-components/btn-scroll/btn-scroll.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { BestSellerSliderComponent } from '../sliders/best-seller-slider/best-seller-slider.component';
 
 @Component({
   selector: 'home',
   standalone: true,
+  styleUrls: ['../../assets/css/responsive.css'],
 
-  imports: [CommonModule,RouterModule,LargSliderComponent,BestSellerSliderComponent,FeatureComponentComponent,BrandSliderComponent,OffersComponentComponent,BtnScrollComponent],
+  imports: [CommonModule,RouterModule,LargSliderComponent,BestSellerSliderComponent,TranslateModule,FeatureComponentComponent,BrandSliderComponent,CategoryComponentComponent,BtnScrollComponent],
 templateUrl: './HomePage.component.html',
-  styleUrls: ["../../assets/css/plugins.css",'../../assets/css/normalize.css','../../assets/css/responsive.css','../../assets/css/main.css','../../styles.css']
 })
-export class HomePage implements OnInit {
+export class HomePage  {
 
-  ngOnInit(): void {
-    initializeSwipers();
-  }
 }

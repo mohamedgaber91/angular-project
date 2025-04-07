@@ -1,0 +1,67 @@
+
+@import './colors.css';
+.search-bar button {
+  background-color: var(--second-color);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--second-color);;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+  font-weight: bolder;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition:  0.3s;
+}
+
+#scrollToTop:hover {
+  background-color: #0056b3;
+}
+
+.larg-next, .larg-prev,.product-next, .product-prev,.category-next,.category-prev {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: #000;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.larg-next ,.product-next,.category-next{
+  right: 10px;
+}
+
+.larg-prev ,.product-prev,.category-prev{
+  left: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}

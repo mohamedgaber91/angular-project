@@ -1,0 +1,41 @@
+:root {
+  --main-color: #0c4a83;
+  --second-color: #068199;
+  --text-color: #333;
+  --bg-light: #f8f8f8;
+  --border-color: #d0cdcd;
+}
+
+.top-bar,
+.delivery-info,
+.top-bar a,
+.language select,
+.footer-section,
+.footer-section a,
+.footer-section .social-icons a {
+  color: white;
+}
+
+.top-bar-container {
+  background-color: var(--main-color);
+}
+.nav-container {
+  background-color: #f8f8f8;
+}
+.footer-section {
+  background-color: var(--main-color);
+}
+.feature-container {
+  background-color: #f0f8ff;
+}
+
+
+.top-bar-container,
+.product-card .product-head p,
+.btn-primary,
+.nav-links a:hover,
+.footer-section {
+  background-color: var(--main-color);
+}
+
+
