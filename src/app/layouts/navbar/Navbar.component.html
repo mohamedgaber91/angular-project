@@ -1,0 +1,160 @@
+<header>
+  <div class="top-bar-container">
+    <div class="special-container">
+      <div class="top-bar">
+
+        <div class="left-icons">
+          <a routerLink="#"><i class="fab fa-facebook"></i></a>
+          <a routerLink="#"><i class="fab fa-instagram"></i></a>
+          <a routerLink="#"><i class="fas fa-mobile-alt"></i></a>
+        </div>
+        <div class="delevery">
+          <div class="swiper-container delevery-swiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide" *ngFor="let delivery of deliveryBaners">
+                <div class="delivery-info">
+                  {{delivery.data | translate}}
+                </div>
+              </div>
+
+            </div>
+            <!-- Pagination -->
+
+            <!-- Navigation buttons -->
+            <!-- <div class="swiper-button-prev delevery-swiper-prev"></div>
+            <div class="swiper-button-next delevery-swiper-next"></div> -->
+            <div class="swiper-button-next" [ngClass]="{'rtl-arrow': currentLang === 'ar'}"></div>
+            <div class="swiper-button-prev" [ngClass]="{'ltr-arrow': currentLang === 'ar'}"></div>
+          </div>
+        </div>
+        <div class="language">
+          <select [(ngModel)]="currentLang" (change)="switchLanguage(currentLang)">
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="nav-container">
+    <div class="special-container">
+      <div class="navbar">
+        <div class="logo">
+          <a routerLink="" > <img src="assets/imges/logo.png" alt="Logo"></a>
+        </div>
+        <div class="search-bar" >
+          <input class="nav-input-search" type="text" placeholder="  Search for...">
+
+        </div>
+        <div class="nav-links">
+          <a *ngIf="!(authService.isLoggedIn$ | async)" routerLink="/login" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}"><i class="fa-regular fa-user"></i> {{"LOGIN" | translate}}</a>
+          <a *ngIf="!(authService.isLoggedIn$ | async)" routerLink="/register" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}"><i class="fa-solid fa-right-to-bracket"></i> {{"REGISTER" | translate}}</a>
+          <a   routerLink="/cart" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}" ><i class="fa-solid fa-cart-shopping"></i> {{"CART" | translate}} (0)</a>
+
+          <a *ngIf="(authService.isLoggedIn$ | async)" (click)="logout()" style="cursor: pointer;">
+
+              <i class="fa-solid fa-right-from-bracket"></i> logout
+          </a>
+     </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="header-container">
+
+    <div class="special-container">
+
+      <!-- Navigation Bar -->
+      <nav>
+        <ul class="section-links">
+          <!-- Shop by Category with Dropdown -->
+          <li class="dropdown">
+            <a [routerLink]="['/home']" fragment="category" >
+              <i class="fa-solid fa-list"></i> Shop by Category
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a routerLink="#">Category 1 <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="submenu">
+                  <li><a routerLink="#">Subcategory 1.1</a></li>
+                  <li><a routerLink="#">Subcategory 1.2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-item">
+                <a routerLink="#">Category 2 <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="submenu">
+                  <li><a routerLink="#">Subcategory 2.1</a></li>
+                  <li><a routerLink="#">Subcategory 2.2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-item">
+                <a routerLink="#">Category 3 <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="submenu">
+                  <li><a routerLink="#">Subcategory 3.1</a></li>
+                  <li><a routerLink="#">Subcategory 3.2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- Other menu items -->
+          <li >
+            <a [routerLink]="['/home']" fragment="brands" >
+              <i class="fa-solid fa-award"></i> Brands
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['/home']" fragment="offers" >
+              <i class="fa-solid fa-tag"></i> Special Offers
+            </a>
+          </li>
+          <li>
+            <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">
+              <i class="fas fa-info-circle"></i> About
+            </a>
+          </li>
+          <li>
+            <a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">
+              <i class="fa-solid fa-phone"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <button class="menu-toggle" (click)="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <button class="close-btn" (click)="toggleMenu()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <nav>
+      <ul>
+        <li *ngIf="!(authService.isLoggedIn$ | async)"> <a routerLink="/login" class="side-link"><i class="fa-regular fa-user"></i> login</a></li>
+        <li *ngIf="!(authService.isLoggedIn$ | async)"> <a routerLink="/register" class="side-link"><i class="fa-solid fa-right-to-bracket"></i> register</a>
+        </li>
+        <li *ngIf="(authService.isLoggedIn$ | async)">
+          <button  class="side-link" (click)="logout()">
+            <i class="fa-solid fa-right-from-bracket"></i> logout
+          </button>
+        </li>
+        <li> <a routerLink="/cart" class="side-link"><i class="fa-solid fa-cart-shopping"></i> Cart (0)</a></li>
+        <li class="dropdown">
+          <a routerLink="/home#category" class="side-link"><i class="fa-solid fa-list"></i> Shop by Category</a>
+        </li>
+        <li><a routerLink="/home#brands" class="side-link"><i class="fa-solid fa-award"></i> Brands</a></li>
+        <li><a routerLink="/home#category" class="side-link"><i class="fa-solid fa-tag"></i> Special Offers</a></li>
+        <li><a routerLink="/about" class="side-link"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a routerLink="/contact" class="side-link"><i class="fa-solid fa-phone"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+</header>

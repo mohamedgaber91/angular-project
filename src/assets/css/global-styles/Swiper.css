@@ -6,7 +6,7 @@
 }
 
 .delevery .swiper-container .swiper-button-prev,.delevery  .swiper-button-next{
-transform: translateY(-19px) !important;
+transform: translateY(0) !important;
 background-color: transparent;
 color: white;
 font-size: 25px;
@@ -175,7 +175,7 @@ height: 200px;
   align-items: center;
 }
 .delevery[_ngcontent-ng-c3037127051] .swiper-container[_ngcontent-ng-c3037127051] .swiper-button-prev[_ngcontent-ng-c3037127051], .delevery[_ngcontent-ng-c3037127051] .swiper-button-next[_ngcontent-ng-c3037127051] {
-  transform: translateY(-19px) !important;
+  transform: translateY(0) !important;
   background-color: transparent;
   color: white;
   font-size: 25px;

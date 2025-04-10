@@ -14779,7 +14779,7 @@ input.cart-plus-minus-box {
 
 /*# sourceMappingURL=style.css.map */
 .delevery .swiper-container .swiper-button-next, .delevery .swiper-button-prev {
-  transform: translateY(-19px)  !important;
+  transform: translateY(0)  !important;
   background-color: transparent;
   color: white;
   font-size: 25px;
